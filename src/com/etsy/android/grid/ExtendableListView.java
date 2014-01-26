@@ -19,6 +19,7 @@ package com.etsy.android.grid;
 
 import java.util.ArrayList;
 
+//import android.annotation.SuppressLint;
 import android.content.Context;
 import android.database.DataSetObserver;
 import android.graphics.Rect;
@@ -250,7 +251,8 @@ public abstract class ExtendableListView extends AbsListView {
         return mAdapter;
     }
 
-    @Override
+//    @SuppressLint("Override")
+//	@Override
     public void setAdapter(final ListAdapter adapter) {
         if (mAdapter != null) {
             mAdapter.unregisterDataSetObserver(mObserver);
